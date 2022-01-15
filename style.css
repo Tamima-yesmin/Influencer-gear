@@ -217,26 +217,113 @@ footer{
 
 @media only screen and (max-width: 688px){
     .container{
-        /* width: 100%; */
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        padding-left: 100px;
     }
 
     nav{
-        align-items: center;
+        
         text-align: center;
+        width: 100%;
+        padding-left: 200px;
+        
+        
     }
 
     .nav-item{
         display:none;
     }
-    .your-journey{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-    }
+    
 
     .Collections, .your-journey{
         grid-template-columns:repeat(1,1fr);
+        grid-row-gap:10px ;
         flex-direction: column;
         
     }
+
+    .your-journey{
+        /* display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap; */
+    }
+
+    .your-journey-detail{
+        display:relative;
+        width: 440px;
+        height: 222px;
+        margin-top: 390px;
+        flex-wrap: wrap;
+    }
+    .your-journey-img-1, .your-journey-img-2{
+        
+        display: absolute;
+        /* top:0; */
+        top: 30%;
+        left: 20px;
+        width: 257px;
+         left: 240px;
+
+        
+    }
+
+    .Popular-Collection{
+        width: 329px;
+        margin-left: 220px;
+        
+        
+    }
+    
+    .footer-section{
+        display:block;
+        width: 100%;
+         
+        padding:0px;
+        margin: 0px;
+    }
+}
+
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+
+    .nav-item{
+        display:none;
+    }
+
+    .Collections{
+        grid-template-columns:repeat(2,1fr);
+        grid-row-gap:100px ;
+        flex-direction: column;
+        
+    }
+
+    .your-journey-detail, h1{
+       
+       font-size: 100px;
+    }
+    .your-journey-detail{
+        font-size:10px;
+       padding-left:-10px;
+      
+    }
+    
+    .your-journey-img img{
+        width: 280px;
+        height: 280px;
+        padding-left: 80px;
+        margin-right: -10px;
+    }
+
+    .Popular-Collection{
+        width: 329px;
+        margin-left: 80px;
+        
+    }
+    
+
 }
