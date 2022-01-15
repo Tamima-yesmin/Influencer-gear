@@ -17,7 +17,7 @@ main{
     margin:80px 120px ;
     color: #3A3A3A;
     /* margin-top: 100px; */
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 
 }
 
@@ -83,8 +83,8 @@ padding-right: 300px;
     position: absolute;
     z-index: 1;
     right: 0;
-    /* transition: 1.4s ease-in-out; */
-    transition: all 1.7s  ease;
+    transition: 1.4s ease-in-out;
+    /* transition: all 1.7s  ease; */
     transition-delay: 0.2s;
 }
 .your-journey-img-1:hover{
@@ -193,11 +193,37 @@ color:#FB8200;
 }
 /* Featured-products-end */
 
+/* Intellifluence-style */
+.Intellifluence-title{
+    text-align:center;
+    font-weight:bold;
+    font-size:22px;
+}
+.Intellifluence-section{
+    display: flex;
+    
+}
+
+.Intellifluence{
+    padding: 50px;
+}
+
+.Intellifluence-img img{
+    height: 100px;
+    width: 120px;
+    padding: 0 50px;
+}
+
+/* Intellifluence-style-end */
+
+
 /* footer-style */
 footer{
     background-color:#0A0826 ;
     width: 100%;
+    
 }
+
 .footer-section{
     padding: 40px;
     text-align: center;
@@ -216,11 +242,13 @@ footer{
 /* footer-style-end */
 
 @media only screen and (max-width: 688px){
+    
     .container{
         width: 100%;
         font-size: 10px;
         text-align: center;
         padding-left: 100px;
+        
     }
 
     nav{
@@ -237,7 +265,7 @@ footer{
     }
     
 
-    .Collections, .your-journey{
+    .Collections, .your-journey,.Intellifluence-section{
         grid-template-columns:repeat(1,1fr);
         grid-row-gap:10px ;
         flex-direction: column;
@@ -275,20 +303,41 @@ footer{
         
         
     }
-    
-    .footer-section{
-        display:block;
+
+    .Intellifluence-section{
+        width: 329px;
+        margin-left: 220px;
+    }
+    .Intellifluence-title h1{
+        /* text-align: center;
+        padding-left: 200px;
+        font-size:20px; */
+        width: 380px;
+        margin-left: 220px;
+    }
+    footer {
         width: 100%;
+        display: block;
+        
+      }
+    /* footer{
+        width: 100%;
+        background-color:green;
+    } */
+    .footer-section{
+        display:block; 
+         width: 100%; 
+
          
-        padding:0px;
-        margin: 0px;
     }
 }
 
 
 @media only screen and (min-width:688px) and (max-width:992px){
     .container{
-        width: 100%;
+        max-width: 100%;
+        background-color: green;
+        overflow: hidden;
     }
 
     .nav-item{
@@ -301,13 +350,17 @@ footer{
         flex-direction: column;
         
     }
+    .Intellifluence-section{
+        
+        flex-direction: column;
+    }
 
     .your-journey-detail, h1{
-       
-       font-size: 100px;
+       width: 408px;
+       font-size: 10px;
     }
     .your-journey-detail{
-        font-size:10px;
+        /* font-size:10px; */
        padding-left:-10px;
       
     }
@@ -316,13 +369,20 @@ footer{
         width: 280px;
         height: 280px;
         padding-left: 80px;
-        margin-right: -10px;
+        margin-right: ;
     }
 
     .Popular-Collection{
         width: 329px;
-        margin-left: 80px;
+        margin-left: 130px;
         
+    }
+    .Intellifluence-section{
+        width: 329px;
+    }
+
+    .Intellifluence-title h1{
+        font-size: 40px;
     }
     
 
